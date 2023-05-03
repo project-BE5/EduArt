@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>EduArt | Invoice</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img src="/assets/logo_eduart.png" alt="logo_eduart" />
+        </a>
+        <button
+          class="navbar-toggler border"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon border"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="/offline-learning.html"
+                >Course</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Mentor</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-between">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown mx-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Reonaldi
+                  <img src="/assets/icon-profile.png" class="profile" />
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- invoice -->
+    <section class="invoice">
+      <div class="container">
+        <div class="row">
+          <div class="col title">
+            <h1 class="text-white text-center">Draft Invoice</h1>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-around mx-3">
+          <div class="col col-lg-5 bg-white h-50">
+            <div class="paket-learning">
+              <h3>Paket Offline Learning 3 Bulan</h3>
+              <h5>Detail Paket</h5>
+              <p>Paket sudah termasuk:</p>
+              <div class="list-paket">
+                <img src="/assets/icon-dollar.png" alt="" />
+                <p>>400rb latihan soal serta pembahasan</p>
+              </div>
+              <div class="list-paket">
+                <img src="/assets/icon-dollar.png" alt="" />
+                <p>Jadwal Belajar</p>
+              </div>
+              <div class="list-paket">
+                <img src="/assets/icon-dollar.png" alt="" />
+                <p>>78rb video belajar premium</p>
+              </div>
+              <div class="list-paket">
+                <img src="/assets/icon-dollar.png" alt="" />
+                <p>Download materi offline</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 bg-white">
+            <div class="pembayaran">
+              <div class="diskon">
+                <h3>Gunakan Diskon</h3>
+                <div class="alert">
+                  <img src="/assets/icon-ceklis.png" />
+                  <h5>RemedialDiskon50Persen</h5>
+                </div>
+              </div>
+              <div class="kupon">
+                <h3>Pilihan Kupon Lainya</h3>
+                <div class="alert">
+                  <img src="/assets/icon-cupon.png" />
+                  <h5>RemedialDiskon50Persen</h5>
+                </div>
+              </div>
+              <div class="detail">
+                <h3>Detail pembayaran</h3>
+                <div class="details p-1">
+                  <div class="detail-pembayaran mb-3">
+                    <p>Paket Offline Learning 3 Bulan</p>
+                    <p>Rp 150.000</p>
+                  </div>
+                  <div class="detail-pembayaran">
+                    <p>Diskon 50%</p>
+                    <p>- Rp 75.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="total">
+                <h3>Total Harga</h3>
+                <p>Rp 75.000</p>
+              </div>
+              <a href="/metode-pembayaran.html" class="btn btn-lg"
+                >Pilih Metode Pembayaran</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

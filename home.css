@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+/* navbar */
+.nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+nav .login {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fb8c00 !important;
+  margin-top: 5px;
+}
+
+nav .regist {
+  background: #fb8c00;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff !important;
+  width: 140px;
+}
+
+nav a:hover {
+  color: #fb8c00 !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
+}
+
+/* footer */
+.footer {
+  background: #263b55;
+  min-height: 60vh;
+}
+
+.footer .desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 36px;
+}
+
+.footer h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff !important;
+  margin-top: 20px;
+}
+
+.footer a:hover {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer .copytext {
+  margin-top: 90px;
+}
+
+.footer .copytext p {
+  border-top: 1px solid white;
+}
+
+/* hero */
+.hero {
+  margin-top: 200px;
+}
+
+.hero .left-column h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 63px;
+}
+
+.hero .left-column p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hero .left-column button {
+  background: #fb8c00;
+  border-radius: 8px;
+  width: 179px;
+  height: 54px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.023em;
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.data {
+  margin-top: 80px;
+}
+
+.data .text {
+  margin-left: 30px;
+}
+
+.data .text h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.data .text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.data .container .row {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
+  margin: 80px 0;
+}
+
+.product {
+  margin-bottom: 200px;
+}
+
+.product h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+}
+
+.product .card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+  border-bottom: 1px solid black;
+}
+
+.product .card .card-body {
+  background: #f3f3f4;
+  box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.product .card .untung {
+  margin-top: 24px;
+}
+
+.product .card .untung p {
+  margin: 0 0 0 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110%;
+}
+
+.product .card .card-body h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  margin-top: 40px;
+}
+
+.product .card .card-body a {
+  background: #fb8c00;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.023em;
+  color: #ffffff !important;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.article h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  margin-bottom: 52px;
+}
+
+.article .card h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.article .card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  margin-bottom: 32px;
+}
+
+.article .card a {
+  background: #fb8c00;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.023em;
+  color: #ffffff !important;
+  width: 100%;
+}
+
+.article .card .card-body {
+  background: #ffffff;
+  box-shadow: 0px 10.7143px 17.8571px rgba(0, 0, 0, 0.1);
+  border-radius: 7.14286px;
+}

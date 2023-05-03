@@ -1,0 +1,922 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+/* navbar */
+.nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+nav a:hover {
+  color: #fb8c00 !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
+}
+
+/* footer */
+.footer {
+  background: #263b55;
+  min-height: 60vh;
+}
+
+.footer a:hover {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer .desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 36px;
+}
+
+.footer h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff !important;
+  margin-top: 20px;
+}
+
+.footer .copytext {
+  margin-top: 90px;
+}
+
+.footer .copytext p {
+  border-top: 1px solid white;
+}
+
+/* --- offline learning --- */
+/* hero */
+.offline-hero {
+  background-image: linear-gradient(
+      180.96deg,
+      rgba(41, 41, 41, 0.813167) 0.82%,
+      #000000 0.82%,
+      rgba(217, 217, 217, 0) 195.22%
+    ),
+    url("/assets/offline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.offline-hero h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px;
+  gap: 10px;
+  border: 6px solid #ffffff;
+}
+
+/* list materi */
+.list-materi .row {
+  margin: 200px 0;
+}
+
+.list-materi img {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.list-materi .text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  margin-bottom: 32px;
+}
+
+.list-materi .text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  color: #2e2e2f;
+  margin-bottom: 55px;
+}
+
+.list-materi .text a {
+  background: #fb8c00;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.023em;
+  color: #ffffff !important;
+}
+
+/* --- login --- */
+.container .login {
+  margin: 0 !important;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+}
+
+.login .right-box {
+  background: #ababab;
+  border-radius: 10px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.login .left-box img {
+  margin-bottom: 90px;
+}
+
+.login .left-box h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.login .left-box p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0 !important;
+  margin-bottom: 35px;
+}
+
+.login .left-box .form-row label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.login .left-box .form-row input {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+
+.login .left-box .form-row .btn {
+  background: #fb8c00;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.023em;
+  color: #ffffff !important;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.login .left-box .form-row p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.login .left-box .form-row p a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fb8c00 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .login .right-box {
+    display: none;
+  }
+}
+
+/* --- penjelasan kelas --- */
+/* hero */
+.penjelasan-kelas-hero {
+  background-image: linear-gradient(
+      180.96deg,
+      rgba(41, 41, 41, 0.813167) 0.82%,
+      #000000 0.82%,
+      rgba(217, 217, 217, 0) 195.22%
+    ),
+    url("/assets/penjelasan-kelas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.penjelasan-kelas-hero h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 110%;
+}
+
+.penjelasan-kelas-hero h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+  margin-top: 32px;
+}
+
+/* tentang program */
+.tentang-program .row {
+  margin-top: 200px;
+}
+
+.tentang-program .text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+.tentang-program .text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: justify;
+  margin-top: 32px;
+}
+
+/* benefits */
+.benefits {
+  width: 100%;
+  margin-top: 200px;
+}
+
+.benefits .title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+}
+
+.benefits .list img {
+  width: 120px;
+  height: auto;
+}
+
+.benefits .list h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+}
+
+.benefits .list p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  margin-top: 25px;
+}
+
+.benefits .penjelasan {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 100px;
+}
+
+/* learning */
+.learning {
+  width: 100%;
+  margin-top: 200px;
+  background: #f3f3f4;
+}
+
+.learning .title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+}
+
+.learning .card img {
+  width: 100%;
+  height: 400px;
+}
+
+.learning .card {
+  margin-top: 90px;
+}
+
+.learning .card h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+  text-decoration: underline;
+}
+
+.learning .card ul li {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110%;
+  margin-top: 20px;
+}
+
+.learning .card .card-body {
+  padding: 32px 32px 50px 32px;
+}
+
+/* timeline */
+.timeline {
+  width: 100%;
+  margin-top: 200px;
+}
+
+.timeline .title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+}
+
+.timeline p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 110%;
+}
+
+.timeline h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 110%;
+}
+
+/* video pembelajaran */
+.video .text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+.video .text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.video .btn {
+  width: 100%;
+  background: #fb8c00;
+  border-radius: 8px;
+  color: white !important;
+}
+
+.video img {
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  margin-top: 200px;
+  background: #f3f3f4;
+  padding-bottom: 100px !important;
+}
+
+.video .title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+}
+
+.video .text-center {
+  margin-bottom: 100px;
+}
+
+.video a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.023em;
+  background: #fb8c00;
+  border-radius: 8px;
+  color: #ffffff !important;
+  width: 100%;
+}
+
+/* --- Invoice --- */
+.invoice {
+  height: auto;
+  width: 100%;
+  background-color: #fb8c00;
+}
+
+.invoice .title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  margin-top: 100px;
+  margin-bottom: 0 !important;
+}
+
+.invoice .row .col {
+  margin: 100px 0;
+  border-radius: 20px;
+}
+
+.paket-learning {
+  padding: 32px;
+}
+
+.list-paket {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.list-paket p {
+  margin: 0 0 0 32px !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+}
+
+.pembayaran {
+  padding: 32px;
+}
+
+.pembayaran h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.pembayaran .alert {
+  margin-bottom: 32px;
+  background: rgba(251, 140, 0, 0.13);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pembayaran .alert h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110%;
+  margin: 0;
+}
+
+.pembayaran .detail {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid black;
+}
+
+.pembayaran .detail .details {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.pembayaran .detail .detail-pembayaran {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pembayaran .detail .detail-pembayaran p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+}
+
+.pembayaran .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.pembayaran .total p {
+  margin: 0;
+}
+
+.pembayaran .total h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  margin: 0;
+}
+
+.pembayaran .btn {
+  background: #fb8c00;
+  border-radius: 10px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff !important;
+}
+
+/* --- Metode Pembayaran --- */
+.metode-pembayaran {
+  height: auto;
+  width: 100%;
+  background-color: #fb8c00;
+}
+
+.metode-pembayaran .pembayaran .col {
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.metode-pembayaran .title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  margin-top: 200px;
+}
+
+.metode-pembayaran .metode h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+
+.metode-pembayaran .metode .total h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 110%;
+}
+
+.metode-pembayaran .metode .via .list-metode {
+  margin-top: 32px;
+  background: #f7f7f7;
+  border-radius: 20px;
+}
+
+.metode-pembayaran .metode .via .list-metode h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+}
+
+.metode-pembayaran .metode .via .list-metode .desc {
+  margin: 20px 0 20px 0;
+}
+
+.metode-pembayaran .metode .via .list-metode p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  margin: 0 0 0 20px;
+}
+
+.metode-pembayaran .metode .via .list-metode .pilihan {
+  background: #f7f7f7;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.metode-pembayaran .metode .via .list-metode .pilihan p {
+  margin-bottom: 0;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+}
+
+
+/* Hasya */
+/*Detail Program */
+
+
+.bg-img{
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bg-img .kata{
+  padding-top: 170px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .bg-img{
+    min-height: 70vh;
+  }
+
+  .bg-img.h2, 
+  .bg-img.h4{
+    font-size: calc(1.525rem + 3.3vw);
+  }
+  
+}
+
+
+.materi-1{
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  
+  
+  .materi-1.h2, 
+  .materi-1 p{
+    font-size: 0.8rem;
+  }
+  
+}
+
+
+#HERO2{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#kartu{
+  max-width: 60%;
+  
+}
+
+#kartu1{
+  
+  border-radius: 5px 5px 0 0;
+  box-shadow: 5px 5px 10px 2px rgb(216, 216, 216);
+}
+
+#kartu2{
+  
+  border-radius: 5px 5px 0 0;
+  box-shadow: 5px 5px 10px 2px rgb(216, 216, 216);
+}
+
+#HERO3{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+
+#video{
+  padding-top: 20px;
+}
+#checkout{
+  margin-top: 20px;
+  background-color: #FB8C00;
+}
+#checkout:hover{
+  background-color: #de481f;
+}
+
+#HERO4{
+  margin-bottom: 200px;
+}
+
+
+
+/*Draft Invoice*/
+
+#VILLAIN1{
+  background-color: #FB8C00;
+  padding-top: 30px;
+  height: 1000px;
+}
+
+#container1{
+  margin-top: 80px;
+}
+
+#col1{
+  background-color: white;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  
+  width: 724px;
+  height: 400px;
+ 
+}
+
+
+#col1 h3{
+  
+  border-bottom: 1.5px solid black;
+  padding: 20px;
+  margin: 0 50px ;
+  
+}
+
+#col2{
+  background-color: white;
+  width: 461px;
+  height: 680px;
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.25);
+}
+
+#container1-1{
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#col2 h5{
+  padding-top: 30px;
+}
+
+#diskon{
+  background: rgba(251, 140, 0, 0.13);
+  margin: 0px 30px;
+  border-radius: 20px;
+  padding: 15px;
+  padding-top: 25px;
+}
+
+#bayar{
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+
+/*Pilihan Pembayaran*/
+
+#VILLAIN2{
+  background-color: #FB8C00;
+  padding-top: 30px;
+  height: 1800px;
+}
+#luaran-putih{
+  background-color: white;
+  width: 766px;
+  height: 1300px;
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.25);
+}
+
+#harga-akhir{
+  color: #FB8C00;
+}
+
+#indomaret{
+  background: #F7F7F7;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#indomaret:hover{
+  background: #e9e9e9;
+  transition: 0.3s;
+}
+
+#minimarket{
+  background: #F7F7F7;
+  border-radius: 20px;
+  margin: 20px 20px;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+a { 
+  color: inherit;
+  text-decoration: none;
+
+} 
+
+
+/*Generate*/
+#VILLAIN3{
+  background-color: white;
+  padding-top: 30px;
+  height: 1800px;
+}
+
+.box{
+  position: relative;
+  width: 729px;
+  height: 800px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+ 
+ 
+  
+}
+
+.box-oren{
+  position: relative;
+  width: 729px;
+  height: 257px;
+  background: #FB8C00;
+  border-radius: 20px;
+  right: 12px;
+}
+
+.box-putih{
+  position: relative;
+  width: 659px;
+  height: 225px;
+  top: 150px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+#bayar-merah{
+  color: red;
+}
+
+@media (max-width: 768px) {
+  
+  
+  .barcode{
+    width: 60%;
+  }
+  
+}
+
+#salin{
+  color: #FB8C00;
+}
+
+#check{
+  background-color: #FB8C00;
+  position: relative;
+  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  padding: 10px 30px;
+}
+
+#check:hover{
+  background-color: #de481f;
+  
+}
