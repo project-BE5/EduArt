@@ -116,7 +116,7 @@ nav a:hover {
   line-height: 21px;
 }
 
-.hero .left-column button {
+.hero .left-column a {
   background: #fb8c00;
   border-radius: 8px;
   width: 179px;

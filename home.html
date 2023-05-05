@@ -61,15 +61,22 @@
               <a class="nav-link" href="#">About</a>
             </li>
           </ul>
-          <div class="">
-            <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-between"
-            >
+          <div class="d-flex align-items-center justify-content-between">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown mx-3">
-                <a href="/" class="nav-link login">Sign In</a>
-              </li>
-              <li class="nav-item dropdown mx-3">
-                <a href="/" class="nav-link regist btn btn-md">Sign In</a>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Reonaldi
+                  <img src="/assets/icon-profile.png" class="profile" />
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -94,7 +101,7 @@
             <br class="d-lg-block d-none" />
             yang membantu pengetahuan Seni Anda
           </p>
-          <button class="btn btn-lg mb-3">Get Started</button>
+          <a href="/offline-learning.html" class="btn btn-lg mb-3 text-white">Get Started</a>
         </div>
         <div
           class="col right-column text-center d-flex justify-content-center pe-0"
