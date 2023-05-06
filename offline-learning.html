@@ -70,11 +70,10 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Reonaldi
                   <img src="/assets/icon-profile.png" class="profile" />
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                  <li><button onclick="logout()" class="dropdown-item" href="/login.html">Logout</button></li>
                 </ul>
               </li>
             </ul>
@@ -98,29 +97,29 @@
 
     <!-- list materi -->
     <section class="list-materi px-5">
-      <div class="container">
-        <div class="row d-flex align-items-center justify-content-center gx-5">
+      <div class="container" id="kursus">
+        <!-- <div class="row d-flex align-items-center justify-content-center gx-5">
           <div class="col-lg-6">
             <img src="/assets/art-design.png" class="w-100" />
           </div>
           <div class="col-lg-4">
-            <div class="text mt-5">
+            <div class="text mt-5" id="arts">
               <h1>Arts & Design</h1>
               <p>
                 art desain adalah seni yang perencanaan dalam pembuatan sebuah
                 objek, sistem, komponen atau struktur. Kemudian, kata “desain”
                 dapat digunakan sebagai kata benda maupun kata kerja.
               </p>
-              <a href="detail.html" class="btn w-100">Mulai!</a>
+              <button id="buttonDetail" onclick="detail()" class="btn w-100">Mulai!</button>
             </div>
           </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center gx-5">
+        </div> -->
+        <!-- <div class="row d-flex align-items-center justify-content-center gx-5">
           <div class="col-lg-6">
             <img src="/assets/traditional-dance.png" class="w-100" />
           </div>
           <div class="col-lg-4">
-            <div class="text mt-5">
+            <div class="text mt-5" id="tari">
               <h1>Traditional Dance</h1>
               <p>
                 Tari tradisional adalah suatu tarian yang berasal dari
@@ -132,13 +131,13 @@
               <a href="detail.html" class="btn w-100">Mulai!</a>
             </div>
           </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center gx-5">
+        </div> -->
+        <!-- <div class="row d-flex align-items-center justify-content-center gx-5">
           <div class="col-lg-6">
             <img src="/assets/music-poet.png" class="w-100" />
           </div>
           <div class="col-lg-4">
-            <div class="text mt-5">
+            <div class="text mt-5" id="musik">
               <h1>Music & Poet</h1>
               <p>
                 Menyusun nada atau suara dalam urutan, kombinasi, dan hubungan
@@ -148,7 +147,7 @@
               <a href="/penjelasan-kelas.html" class="btn w-100">Mulai!</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -216,6 +215,71 @@
         </div>
       </div>
     </footer>
+
+    <script src="main.js"></script>
+    <script>
+      // const baseUrl = "https://63930d2bab513e12c50169ad.mockapi.io";
+
+      const arts = document.getElementById('arts');
+      let tari = document.getElementById('tari');
+      let musik = document.getElementById('musik');
+      const kursus = document.getElementById('kursus');
+
+      fetch(`${baseUrl}/course`)
+      .then((result) => result.json())
+      .then((response) => {
+        // let row1 = `
+        // <h1>${response[0].name_course}</h1>
+        // <p>${response[0].desc_course}</p>
+        // <button id="buttonDetail" onclick="window.location.href=127.0.0.1:5500/detail.html?id=0" class="btn w-100">Mulai!</button>`;
+        // arts.innerHTML += row1;
+
+        // let row2 = `
+        // <h1>${response[1].name_course}</h1>
+        // <p>${response[1].desc_course}</p>`;
+        // tari.innerHTML += row2;
+
+        // let row3 = `
+        // <h1>${response[2].name_course}</h1>
+        // <p>${response[2].desc_course}</p>`;
+        // musik.innerHTML += row3;
+        response.forEach(item => {
+          const id = item.id;
+
+          let row = `<div class="row d-flex align-items-center justify-content-center gx-5">
+          <div class="col-lg-6">
+            <img src="/assets/art-design.png" class="w-100" />
+          </div>
+          <div class="col-lg-4">
+            <div class="text mt-5" id="arts">
+              <h1>${item.name_course}</h1>
+              <p>
+                ${item.desc_course}
+              </p>
+              <a href="detail.html?id=${id}" class="btn w-100">Mulai!</a>
+            </div>
+          </div>
+        </div>`;
+          kursus.innerHTML += row;
+      
+          // window.location.href = 'detail.html?id=' + id;
+        })
+      });
+      
+      // function detail() {
+      //   fetch(`${baseUrl}/course`)
+      //   .then((result) => result.json())
+      //   .then((response) => {
+      //     response.forEach(item => {
+      //       var idValue = item.id;
+      //       var encodedIdValue = encodeURIComponent(idValue);
+      //       window.location.href = 'detail.html?id=' + encodedIdValue;
+      //     });
+      //   });
+      // }
+    
+      
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
