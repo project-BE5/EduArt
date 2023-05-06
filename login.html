@@ -22,7 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    
     <title>EduArt | Offline Learning</title>
   </head>
   <body>
@@ -38,10 +38,11 @@
               <h1>Welcome Back</h1>
               <p>Please enter your details</p>
             </div>
-            <form action="#" id="loginForm">
+            <form action="home.html" id="loginForm" >
               <div class="form-row">
                 <label class="form-label">Email</label>
                 <input
+                  name="email"
                   type="email"
                   class="form-control"
                   placeholder="Enter your email"
@@ -61,7 +62,7 @@
               </div>
               <div class="form-row text-center">
                 <!-- <a href="/" type="submit" class="btn w-100">Login</a> -->
-                <button type="submit" class="btn w-100">Login</button>
+                <button onclick="loginUser()" type="submit" class="btn w-100">Login</button>
                 <p>Don't have an account? <a href="/register.html">Register</a></p>
               </div>
             </form>
@@ -73,45 +74,11 @@
       </div>
     </section>
 
-    <script>
-      const baseUrl = "https://63930d2bab513e12c50169ad.mockapi.io";
-
-      const loginForm = document.getElementById('loginForm');
-      const emailInput = document.getElementById('emailInput');
-      const passwordInput = document.getElementById('passwordInput');
-
-      loginForm.addEventListener('submit', event => {
-          event.preventDefault();
-
-          const email = emailInput.value;
-          const password = passwordInput.value;
-
-          fetch(`${baseUrl}/users`)
-          .then((result) => result.json())
-          .then((response) => {
-              // if (response.ok) {
-              //     window.location.href = '/';
-              // } else {
-              //     errorText.style.display = 'block';
-              //     errorText.innerText = 'Error Register';
-              // }
-              // console.log(response[0].name);
-
-              response.forEach(item => {
-                // console.log(item.email);
-                // console.log(item.password);
-
-                if (item.email == email && item.password == password) {
-                  window.location.href = '/home.html';
-                  alert('Login successful!');
-                } else {
-                  alert('Email atau Password anda salah');
-                }
-              })
-          })
-          .catch(error=>console.log(error))
-      });
-
+    <script src="main.js">
+      history.pushState(null, null, location.href);
+        window.onpopstate = function(event) {
+        history.go(1);
+      };
     </script>
   </body>
 </html>
